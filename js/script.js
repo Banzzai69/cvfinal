@@ -1,3 +1,13 @@
+function toggleNom() {
+  let contenu = document.getElementById("nom");
+  
+  if (contenu.innerHTML === "Donato Florian") {
+    contenu.innerHTML = "Fais pas l'étonné";
+  } else {
+    contenu.innerHTML = "Donato Florian";
+  }
+}
+
 function togglePhoneNumber() {
     var phoneElement = document.getElementById('phone');
     
