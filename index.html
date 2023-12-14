@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  </head>
+  <body>
+    <main id="home" class="main-content">
+      <section class="left-section">
+        <div class="left-content">
+          <div class="profile">
+            <div class="image">
+              <img src="/images/photo.png" alt="" />
+            </div>
+            <h2 class="name">Donato Florian</h2>
+            <p class="career">Administrateur Réseau</p>
+          </div>
+          <div class="contact-info">
+            <h3 class="main-title">Contact Info</h3>
+            <ul>
+              <li>
+                <i class="fa fa-phone"></i>
+                <p id="phone" style="display:none">
+                  07.60.60.36.40
+                </p>
+            
+                <button
+                  type="button"
+                  onclick="togglePhoneNumber()">
+                  Afficher/Cacher
+                </button>
+            </li>
+              <li>
+                <i class="fa fa-fax"></i>
+                <p id="mail" style="display:none">florian.donato@outlook.fr</p>
+                <button
+                type="button"
+                onclick="toggleMail()">
+                Afficher/Cacher 
+              </button>
+              </li>
+              
+
+              <li>
+                <i class="fa-brands fa-facebook"></i>
+                <p id="facebook" style="display:none">www.facebook.com/banzzai</p>
+                <button
+                type="button"
+                onclick="toggleFacebook()">
+                Afficher/Cacher
+              </button>
+              </li>
+              <li>
+                <i class="fa-brands fa-instagram"></i>
+               <p id="insta" style="display:none"> @banzzai69</p>
+                <button
+                type="button"
+                onclick="toggleInstagram()">
+                Afficher/Cacher 
+              </button>
+              </li>
+              <li>
+                <i class="fa fa-map-marker"></i>
+                <p id="adress" style="display:none">60,rue Rey loras 69250 Neuville sur saône</p>
+                <button
+                type="button"
+                onclick="toggleAdress()">
+                Afficher/Cacher
+              </button>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="skills-section">
+            <h3 class="main-title">Skills</h3>
+            <ul>
+              <li>
+                <p class="skill-title">Javascript</p>
+                <div class="progress-bar">
+                  <div class="progress js-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">Python</p>
+                <div class="progress-bar">
+                  <div class="progress py-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">SQL</p>
+                <div class="progress-bar">
+                  <div class="progress sql-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">HTML/CSS</p>
+                <div class="progress-bar">
+                  <div class="progress html-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">Windows</p>
+                <div class="progress-bar">
+                  <div class="progress w-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">Linux</p>
+                <div class="progress-bar">
+                  <div class="progress l-progress"></div>
+                </div>
+              </li>
+              <li>
+                <p class="skill-title">VMWare</p>
+                <div class="progress-bar">
+                  <div class="progress vm-progress"></div>
+                </div>
+              </li>
+              
+          </div>
+          
+          </div>
+        </div>
+      </section>
+      <section class="right-section">
+        <div class="right-main-content">
+          <section class="about sect">
+            <h2 class="right-title">A propos</h2>
+            <p class="para">
+              Passionné d'informatique âgé de 42 ans, en reconversion professionnelle et actuellement en formation dans le domaine de l'informatique. Fort d'une expérience professionnelle antérieure dans la sécurité privée, je me lance aujourd'hui avec enthousiasme dans une nouvelle aventure professionnelle axée sur ma véritable passion : les technologies de l'information
+            </p>
+          </section>
+
+          <section class="experince sect">
+            <h2 class="right-title">Experience</h2>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">Goron SL</h5>
+                <p class="para">2003-2023</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">Agent de sécurité</h5>
+                  <p class="para">
+                    Filtrage d'accès, contrôle des scellés des semis entrée/sortie.                    
+                  </p>
+                </div>
+              </div>
+            </div>
+        
+        
+          </section>
+          <section class="education sect">
+            <h2 class="right-title">Parcours académique</h2>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">AFIP Formations</h5>
+                <p class="para">2023 - en cours</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">Bachelor informatique cybersécurité</h5>
+                  <p class="para">
+                    Formation en cours 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">Lycée privé Saint Charles</h5>
+                <p class="para">1999-2001</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">BAC PRO Maintenance audiovisuelle</h5>
+                  <p class="para">
+                    Diplôme obtenu
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline">
+              <div class="left-tl-content">
+                <h5 class="tl-title">LEP alexandre Bérard</h5>
+                <p class="para">1997-1999</p>
+              </div>
+              <div class="right-tl-content">
+                <div class="tl-content">
+                  <h5 class="tl-title-2">BEP Electronique</h5>
+                  <p class="para">
+                    Diplôme obtenu
+                </div>
+              </div>
+            </div>
+          </section>
+            </main>
+  </body>
+  <script src="/js/script.js"></script>
+</html>
