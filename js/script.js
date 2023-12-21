@@ -1,61 +1,32 @@
-function toggleNom() {
-  let contenu = document.getElementById("nom");
-  
-  if (contenu.innerHTML === "Donato Florian") {
-    contenu.innerHTML = "Fais pas l'étonné";
+
+
+
+function toggleProfileInfo() {
+  var nomElement = document.getElementById("nom");
+  var careerElement = document.getElementById("career");
+  var photoElement = document.getElementById("photo");
+  var aboutElement = document.querySelector(".about");
+
+  if (nomElement.innerHTML === "Donato Florian") {
+    nomElement.innerHTML = "Fais pas l'étonné";
+    careerElement.innerHTML = "Père noël par intérim"; // Change le métier
+    photoElement.src = "images/Jonathan_G_Meath_portrays_Santa_Claus.jpg";
+    aboutElement.innerHTML = "Père noël en reconversion profesionnel, après l'abandon de la mère neël au profit du grinch";   // Change l'image de profil
   } else {
-    contenu.innerHTML = "Donato Florian";
+    nomElement.innerHTML = "Donato Florian";
+    careerElement.innerHTML = "Administrateur Réseau"; // Remet le métier d'origine
+    photoElement.src = "images/photo.png";  // Remet l'image d'origine
+    aboutElement.innerHTML = "Passionné d'informatique âgé de 42 ans, en reconversion professionnelle et actuellement en formation dans le domaine de l'informatique. Fort d'une expérience professionnelle antérieure dans la sécurité privée, je me lance aujourd'hui avec enthousiasme dans une nouvelle aventure professionnelle axée sur ma véritable passion : les technologies de l'information";
   }
 }
 
-function togglePhoneNumber() {
-    var phoneElement = document.getElementById('phone');
-    
-    // If currently hidden, show it; otherwise, hide it
-    if (phoneElement.style.display === 'none' || phoneElement.style.display === '') {
-      phoneElement.style.display = 'block';
-    } else {
-      phoneElement.style.display = 'none';
-    }
-  }
+function toggleElement(elementId) {
+  var element = document.getElementById(elementId);
 
-  function toggleAdress() {
-    var adressElement = document.getElementById('adress');
-    
-    // If currently hidden, show it; otherwise, hide it
-    if (adressElement.style.display === 'none' || adressElement.style.display === '') {
-      adressElement.style.display = 'block';
-    } else {
-      adressElement.style.display = 'none';
-    }
+  // If currently hidden, show it; otherwise, hide it
+  if (element.style.display === 'none' || element.style.display === '') {
+    element.style.display = 'block';
+  } else {
+    element.style.display = 'none';
   }
-  function toggleMail() {
-    var mailElement = document.getElementById('mail');
-    
-    // If currently hidden, show it; otherwise, hide it
-    if (mailElement.style.display === 'none' || mailElement.style.display === '') {
-      mailElement.style.display = 'block';
-    } else {
-      mailElement.style.display = 'none';
-    }
-  }
-  function toggleFacebook() {
-    var facebookElement = document.getElementById('facebook');
-    
-    // If currently hidden, show it; otherwise, hide it
-    if (facebookElement.style.display === 'none' || facebookElement.style.display === '') {
-      facebookElement.style.display = 'block';
-    } else {
-      facebookElement.style.display = 'none';
-    }
-  }
-  function toggleInstagram() {
-    var instaElement = document.getElementById('insta');
-    
-    // If currently hidden, show it; otherwise, hide it
-    if (instaElement.style.display === 'none' || instaElement.style.display === '') {
-      instaElement.style.display = 'block';
-    } else {
-      instaElement.style.display = 'none';
-    }
-  }
+}

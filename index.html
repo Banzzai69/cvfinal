@@ -9,8 +9,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap"
       rel="stylesheet" />
-    <link
-      rel="stylesheet"
+   <link
+       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
   <body>
@@ -18,64 +18,39 @@
       <section class="left-section">
         <div class="left-content">
           <div class="profile">
-            <div class="image">
-              <img src="/images/photo.png" alt="" />
+            <div class="image" onmouseover="toggleProfileInfo()" onmouseout="toggleProfileInfo()">
+              <img id="photo" src="/images/photo.png" alt="original photo" />
             </div>
-            <h2 onmouseover="toggleNom()" onmouseout="toggleNom()" id="nom" class="name">Donato Florian</h2>
-            <p class="career">Administrateur Réseau</p>
+            <h2 onmouseover="toggleInfo()" onmouseout="toggleInfo()" id="nom" class="name">Donato Florian</h2>
+            <p id="career" onmouseover="toggleInfo()" onmouseout="toggleInfo()" class="career">Administrateur Réseau</p>
           </div>
           <div class="contact-info">
             <h3 class="main-title">Contact Info</h3>
             <ul>
               <li>
                 <i class="fa fa-phone"></i>
-                <p id="phone" style="display:none">
-                  07.60.60.36.40
-                </p>
-            
-                <button
-                  type="button"
-                  onclick="togglePhoneNumber()">
-                  Afficher/Cacher
-                </button>
-            </li>
+                <p id="phone" style="display:none">07.60.60.36.40</p>
+                <button type="button" onclick="toggleElement('phone')">Afficher/Cacher</button>
+              </li>
               <li>
                 <i class="fa fa-fax"></i>
                 <p id="mail" style="display:none">florian.donato@outlook.fr</p>
-                <button
-                type="button"
-                onclick="toggleMail()">
-                Afficher/Cacher 
-              </button>
+                <button type="button" onclick="toggleElement('mail')">Afficher/Cacher</button>
               </li>
-              
-
               <li>
                 <i class="fa-brands fa-facebook"></i>
                 <p id="facebook" style="display:none">www.facebook.com/banzzai</p>
-                <button
-                type="button"
-                onclick="toggleFacebook()">
-                Afficher/Cacher
-              </button>
+                <button type="button" onclick="toggleElement('facebook')">Afficher/Cacher</button>
               </li>
               <li>
                 <i class="fa-brands fa-instagram"></i>
-               <p id="insta" style="display:none"> @banzzai69</p>
-                <button
-                type="button"
-                onclick="toggleInstagram()">
-                Afficher/Cacher 
-              </button>
+                <p id="insta" style="display:none">@banzzai69</p>
+                <button type="button" onclick="toggleElement('insta')">Afficher/Cacher</button>
               </li>
               <li>
                 <i class="fa fa-map-marker"></i>
-                <p id="adress" style="display:none">60,rue Rey loras 69250 Neuville sur saône</p>
-                <button
-                type="button"
-                onclick="toggleAdress()">
-                Afficher/Cacher
-              </button>
+                <p id="adress" style="display:none">Neuville sur saône</p>
+                <button type="button" onclick="toggleElement('adress')">Afficher/Cacher</button>
               </li>
             </ul>
           </div>
@@ -133,12 +108,12 @@
       </section>
       <section class="right-section">
         <div class="right-main-content">
-          <section class="about sect">
-            <h2 class="right-title">A propos</h2>
-            <p class="para">
-              Passionné d'informatique âgé de 42 ans, en reconversion professionnelle et actuellement en formation dans le domaine de l'informatique. Fort d'une expérience professionnelle antérieure dans la sécurité privée, je me lance aujourd'hui avec enthousiasme dans une nouvelle aventure professionnelle axée sur ma véritable passion : les technologies de l'information
-            </p>
-          </section>
+        <section class="about sect" onmouseover="toggleProfileInfo()" onmouseout="toggleProfileInfo()">
+  <h2 class="right-title">A propos</h2>
+  <p class="para">
+    Passionné d'informatique âgé de 42 ans, en reconversion professionnelle et actuellement en formation dans le domaine de l'informatique. Fort d'une expérience professionnelle antérieure dans la sécurité privée, je me lance aujourd'hui avec enthousiasme dans une nouvelle aventure professionnelle axée sur ma véritable passion : les technologies de l'information
+  </p>
+</section>
 
           <section class="experince sect">
             <h2 class="right-title">Experience</h2>
